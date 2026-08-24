@@ -31,22 +31,23 @@ By the end of the plan, you should be able to:
 ## How to use it
 
 1. Work through one day at a time, in order. Each day lists what to study, small Rust functions or data structures to build, practice problems, and a review question.
-2. Implement the listed “Build” exercises before consulting a solution. Keep them in a separate Rust project so that they compile and can be tested.
+2. Implement the listed “Build” exercises before consulting a solution. Keep each problem's implementation and tests together in one Rust file under its day directory.
 3. For every solution, record the invariant, complexity, and any Rust-specific ownership or borrowing issue you encountered.
 4. Use each weekly review/buffer day to rebuild the named templates from memory and repair gaps rather than starting new material.
 5. Reserve the final week for timed work. Treat the mock-contest rules as part of the exercise: no notes, no external solutions, and deliberate post-contest diagnosis.
 
-## Suggested practice setup
+## Practice layout
 
-Install the stable Rust toolchain with [rustup](https://rustup.rs/), then make a companion project for your implementations:
+This repository is already a Cargo project. Each problem has one source file containing its question link, solution, and tests:
 
-```bash
-cargo new rust-algorithm-practice
-cd rust-algorithm-practice
-cargo test
+```text
+src/week_01/day_01/
+├── lc_026_remove_duplicates_from_sorted_array.rs
+├── lc_283_move_zeroes.rs
+└── lc_977_squares_of_a_sorted_array.rs
 ```
 
-As the roadmap reaches Week 8, organize only the algorithms you can recreate confidently into modules such as `binary_search`, `dsu`, `graph`, `dijkstra`, `fenwick`, `segment_tree`, `trie`, `kmp`, and `math`.
+Start a new problem from `templates/problem.rs`, add it to that day's `mod.rs`, then run `cargo test`. As the roadmap reaches Week 8, organize only the algorithms you can recreate confidently into modules such as `binary_search`, `dsu`, `graph`, `dijkstra`, `fenwick`, `segment_tree`, `trie`, `kmp`, and `math`.
 
 ## What each day contains
 

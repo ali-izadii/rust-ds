@@ -1,3 +1,4 @@
+// Each problem implementation and its tests belong in the same source file.
 pub mod day_01;
 pub mod day_02;
 pub mod day_03;
