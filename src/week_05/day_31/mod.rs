@@ -1,0 +1,5 @@
+//! Day 31 exercise scaffolds.
+
+pub mod lc_1489_find_critical_and_pseudo_critical_edges_in_minimum_spanning_tree;
+pub mod lc_1584_min_cost_to_connect_all_points;
+pub mod lc_1697_checking_existence_of_edge_length_limited_paths;
