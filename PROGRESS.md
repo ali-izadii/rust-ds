@@ -1,12 +1,15 @@
 # Progress
 
-Track only completed work here. Keep the detailed plan in [`program/`](program/).
+Track completed and current work here. Keep the detailed plan in [`program/`](program/).
 
 ## Week 1
 
-- [ ] Day 1 — LC 26: Remove Duplicates from Sorted Array
-- [ ] Day 1 — LC 283: Move Zeroes
-- [ ] Day 1 — LC 977: Squares of a Sorted Array
+- [x] Day 1 — LC 26: Remove Duplicates from Sorted Array
+- [x] Day 1 — LC 283: Move Zeroes
+- [x] Day 1 — LC 977: Squares of a Sorted Array
+- [ ] Day 2 — LC 167: Two Sum II
+- [ ] Day 2 — LC 11: Container With Most Water
+- [ ] Day 2 — LC 15: 3Sum
 
 ## Adding a solution
 
