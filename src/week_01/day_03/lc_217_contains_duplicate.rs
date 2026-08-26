@@ -2,8 +2,10 @@
 
 #![allow(unused_variables)]
 
-pub fn solve(nums: &[i32]) -> bool {
-    todo!("track seen values in a HashSet")
+use std::collections::HashSet;
+
+pub fn solve(nums: Vec<i32>) -> bool {
+    nums.len() != HashSet::<i32>::from_iter(nums).len()
 }
 
 #[cfg(test)]
@@ -11,20 +13,18 @@ mod tests {
     use super::solve;
 
     #[test]
-    #[ignore = "Exercise scaffold: enable after implementing solve"]
     fn covers_empty_distinct_and_repeated_inputs() {
-        assert!(!solve(&[]));
-        assert!(!solve(&[-2, 0, 4]));
-        assert!(solve(&[1, 2, 3, 1]));
+        assert!(!solve(vec![]));
+        assert!(!solve(vec![-2, 0, 4]));
+        assert!(solve(vec![1, 2, 3, 1]));
     }
 
     #[test]
-    #[ignore = "Exercise scaffold: enable after implementing solve"]
     fn detects_adjacent_distant_negative_and_boundary_duplicates() {
-        assert!(!solve(&[42]));
-        assert!(solve(&[5, 5]));
-        assert!(solve(&[-1, 2, 3, 4, -1]));
-        assert!(solve(&[i32::MIN, 0, i32::MAX, i32::MIN]));
-        assert!(!solve(&[i32::MIN, 0, i32::MAX]));
+        assert!(!solve(vec![42]));
+        assert!(solve(vec![5, 5]));
+        assert!(solve(vec![-1, 2, 3, 4, -1]));
+        assert!(solve(vec![i32::MIN, 0, i32::MAX, i32::MIN]));
+        assert!(!solve(vec![i32::MIN, 0, i32::MAX]));
     }
 }

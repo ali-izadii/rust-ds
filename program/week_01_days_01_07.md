@@ -115,7 +115,7 @@ Ask:
 ```rust
 fn frequencies(nums: &[i32]) -> HashMap<i32, usize>
 fn contains_duplicate(nums: &[i32]) -> bool
-fn two_sum(nums: &[i32], target: i32) -> Option<(usize, usize)>
+fn intersection(nums1: &[i32], nums2: &[i32]) -> Vec<i32>
 ```
 
 Use:
@@ -127,8 +127,8 @@ Use:
 ### Problems
 
 1. LC 217 — Contains Duplicate
-2. LC 1 — Two Sum
-3. LC 242 — Valid Anagram
+2. LC 242 — Valid Anagram
+3. LC 349 — Intersection of Two Arrays
 
 ### Review
 

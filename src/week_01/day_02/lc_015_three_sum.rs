@@ -2,7 +2,7 @@
 
 #![allow(unused_variables)]
 
-pub fn solve(nums: &[i32]) -> Vec<Vec<i32>> {
+pub fn solve(mut nums: Vec<i32>) -> Vec<Vec<i32>> {
     todo!("sort then use two pointers")
 }
 
@@ -19,29 +19,32 @@ mod tests {
     }
 
     #[test]
-    #[ignore = "Exercise scaffold: enable after implementing solve"]
     fn finds_unique_triplets_and_ignores_duplicate_answers() {
         assert_eq!(
-            normalized(solve(&[-1, 0, 1, 2, -1, -4])),
+            normalized(solve(vec![-1, 0, 1, 2, -1, -4])),
             vec![vec![-1, -1, 2], vec![-1, 0, 1]]
         );
     }
 
     #[test]
-    #[ignore = "Exercise scaffold: enable after implementing solve"]
     fn handles_short_no_solution_and_all_zero_inputs() {
-        assert_eq!(normalized(solve(&[])), Vec::<Vec<i32>>::new());
-        assert_eq!(normalized(solve(&[1, 2])), Vec::<Vec<i32>>::new());
-        assert_eq!(normalized(solve(&[1, 2, -2, -1])), Vec::<Vec<i32>>::new());
-        assert_eq!(normalized(solve(&[0, 0, 0, 0])), vec![vec![0, 0, 0]]);
+        assert_eq!(normalized(solve(vec![])), Vec::<Vec<i32>>::new());
+        assert_eq!(normalized(solve(vec![1, 2])), Vec::<Vec<i32>>::new());
+        assert_eq!(
+            normalized(solve(vec![1, 2, -2, -1])),
+            Vec::<Vec<i32>>::new()
+        );
+        assert_eq!(normalized(solve(vec![0, 0, 0, 0])), vec![vec![0, 0, 0]]);
     }
 
     #[test]
-    #[ignore = "Exercise scaffold: enable after implementing solve"]
     fn handles_duplicate_values_multiple_answers_and_extreme_shapes() {
-        assert_eq!(normalized(solve(&[-2, 0, 0, 2, 2])), vec![vec![-2, 0, 2]]);
         assert_eq!(
-            normalized(solve(&[-4, -2, -2, -2, 0, 1, 2, 2, 3, 3, 4, 4, 6, 6])),
+            normalized(solve(vec![-2, 0, 0, 2, 2])),
+            vec![vec![-2, 0, 2]]
+        );
+        assert_eq!(
+            normalized(solve(vec![-4, -2, -2, -2, 0, 1, 2, 2, 3, 3, 4, 4, 6, 6])),
             vec![
                 vec![-4, -2, 6],
                 vec![-4, 0, 4],
@@ -51,7 +54,7 @@ mod tests {
                 vec![-2, 0, 2],
             ]
         );
-        assert_eq!(normalized(solve(&[-1, 0, 1])), vec![vec![-1, 0, 1]]);
-        assert_eq!(normalized(solve(&[1, 1, 1])), Vec::<Vec<i32>>::new());
+        assert_eq!(normalized(solve(vec![-1, 0, 1])), vec![vec![-1, 0, 1]]);
+        assert_eq!(normalized(solve(vec![1, 1, 1])), Vec::<Vec<i32>>::new());
     }
 }

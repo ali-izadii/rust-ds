@@ -301,32 +301,34 @@ You should additionally be able to:
 
 Before declaring the 60-day program complete, verify:
 
-- [ ] Arrays / Two Pointers
-- [ ] Hashing
-- [ ] Sliding Window
-- [ ] Sorting
-- [ ] Binary Search
-- [ ] Linked Lists
-- [ ] Stacks / Queues
-- [ ] Monotonic Stack / Queue
-- [ ] Intervals
-- [ ] Trees / BST
-- [ ] Heaps
-- [ ] Backtracking
-- [ ] BFS / DFS
-- [ ] Topological Sort
-- [ ] DSU
-- [ ] Dijkstra
-- [ ] MST
-- [ ] Greedy
-- [ ] Dynamic Programming
-- [ ] Trie
-- [ ] KMP / Rolling Hash
-- [ ] Bit Manipulation
-- [ ] Number Theory
-- [ ] Fenwick Tree
-- [ ] Segment Tree
-- [ ] Mixed pattern recognition
+**Status:** ✅ Complete · ⬜ Not started · 🛠️ Under maintenance
+
+- ⬜ Arrays / Two Pointers
+- ⬜ Hashing
+- ⬜ Sliding Window
+- ⬜ Sorting
+- ⬜ Binary Search
+- ⬜ Linked Lists
+- ⬜ Stacks / Queues
+- ⬜ Monotonic Stack / Queue
+- ⬜ Intervals
+- ⬜ Trees / BST
+- ⬜ Heaps
+- ⬜ Backtracking
+- ⬜ BFS / DFS
+- ⬜ Topological Sort
+- ⬜ DSU
+- ⬜ Dijkstra
+- ⬜ MST
+- ⬜ Greedy
+- ⬜ Dynamic Programming
+- ⬜ Trie
+- ⬜ KMP / Rolling Hash
+- ⬜ Bit Manipulation
+- ⬜ Number Theory
+- ⬜ Fenwick Tree
+- ⬜ Segment Tree
+- ⬜ Mixed pattern recognition
 
 ---
 
